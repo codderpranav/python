@@ -2,29 +2,52 @@
 
 This repository contains a collection of Python programs and examples — from basic exercises to more advanced projects — organized for learning and sharing.
 
+## Table of contents
+- [About](#about)
+- [What you'll find](#what-youll-find)
+- [Getting started](#getting-started)
+- [Project layout](#project-layout)
+- [Running the example](#running-the-example)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [License](#license)
+
+## About
+A curated set of Python examples and small projects to help learners practice common programming concepts and algorithms.
+
 ## What you'll find
 - Beginner exercises (variables, conditionals, loops, functions)
 - Data structures (lists, dicts, sets, tuples)
 - Algorithms and problem-solving examples
 - Small projects and scripts (file I/O, web scraping, automation)
 
-## How to use
+## Getting started
 1. Clone the repo:
    git clone https://github.com/codderpranav/python.git
 2. Navigate into the folder and run scripts with Python 3.x, for example:
    python3 examples/hello_world.py
 
-## Contributing
-Contributions are welcome! Please:
-1. Fork the repository
-2. Create a branch for your change
-3. Add or update files, include clear filenames and comments
-4. Open a pull request with a description of what you changed
+## Project layout
+- examples/         # runnable example scripts
+- tests/            # basic tests (pytest)
+- README.md         # this file
+- LICENSE           # project license
 
-## Suggestions to improve discoverability
-- Add repository topics (e.g. python, algorithms, projects, beginner)
-- Add descriptive filenames and a short description at the top of each folder
-- Add unit tests and examples so visitors can run code quickly
+## Running the example
+From the repository root:
+
+python3 examples/hello_world.py
+
+Or run the test suite (requires pytest):
+
+pip install -r requirements.txt || true
+pytest -q
+
+## Testing
+A minimal pytest test is included in tests/ that verifies the example script's helper function.
+
+## Contributing
+See CONTRIBUTING.md for contribution guidelines.
 
 ## License
 This repository is available under the MIT License — see LICENSE for details.
